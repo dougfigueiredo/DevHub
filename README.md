@@ -11,8 +11,9 @@ Social-style interface for developers, built to practice Bootstrap icons and vis
 This project was developed to practice Bootstrap components, layout structure, and responsive design. It simulates a developer social feed where posts can be shared and displayed.
 
 ## 📂 My Projects on the Feed
-- Pokedex App ([GitHub Link](#))
-- 
+- Pokedex App (https://github.com/dougfigueiredo/pokedex)
+- OnebitX Web (https://github.com/dougfigueiredo/OnebitX)
+- Portifolio(https://github.com/dougfigueiredo/portfolio)
 
 ## 📸 Preview
 <img width="1464" height="953" alt="image" src="https://github.com/user-attachments/assets/c769c1f9-0c64-479f-9cde-dff924c71657" />
