@@ -139,37 +139,39 @@
         <hr>
 
         <!-- Posts -->
-        <div class="card shadow mb-3">
-          <div class="card-header d-flex align-items-center gap-2">
-            <img src="https://unsplash.it/48" alt="" class="img-fluid rounded-circle" width="48" height="48">
-            <div>
-              <div class="card-title fw-bold mb-0">Douglas Figueiredo</div>
-              <div class="text-secondary">2 hours ago</div>
+        <div class="posts">
+          <div class="card shadow mb-3">
+            <div class="card-header d-flex align-items-center gap-2">
+              <img src="https://unsplash.it/48" alt="" class="img-fluid rounded-circle" width="48" height="48">
+              <div>
+                <div class="card-title fw-bold mb-0">Douglas Figueiredo</div>
+                <div class="text-secondary">2 hours ago</div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>See my <a href="https://github.com/dougfigueiredo/pokedex" target="_blank"
+                  rel="noopener noreferrer">pokedex project</a> on GitHub.</p>
+              <div>
+                <img src="./src/img/Captura de tela pokedex.png" alt="" class="img-fluid rounded mb-2">
+              </div>
+            </div>
+            <hr class="mx-2 my-0">
+            <div class="card-footer">
+              <div class="d-flex gap-2">
+                <button class="btn btn-invisible w-100">
+                  <i class="bi bi-hand-thumbs-up me-1"></i> Curtir
+                </button>
+                <button class="btn btn-invisible w-100">
+                  <i class="bi bi-chat-dots me-1"></i> Comentar
+                </button>
+                <button class="btn btn-invisible w-100">
+                  <i class="bi bi-share me-1"></i> Compartilhar
+                </button>
+              </div>
             </div>
           </div>
-          <div class="card-body">
-            <p>See my <a href="https://github.com/dougfigueiredo/pokedex" target="_blank"
-                rel="noopener noreferrer">pokedex project</a> on GitHub.</p>
-            <div>
-              <img src="./src/img/Captura de tela pokedex.png" alt="" class="img-fluid rounded mb-2">
-            </div>
-          </div>
-          <hr class="mx-2 my-0">
-          <div class="card-footer">
-            <div class="d-flex gap-2">
-              <buuton class="bnt btn-invisible w-100">
-                <i class="bi bi-hand-thumbs-up me-1"></i> Curtir
-              </buuton>
-              <buuton class="bnt btn-invisible w-100">
-                <i class="bi bi-chat-dots me-1"></i> Comentar
-              </buuton>
-              <buuton class="bnt btn-invisible w-100">
-                <i class="bi bi-share me-1"></i> Compartilhar
-              </buuton>
-            </div>
-          </div>
-
         </div>
+
         <div class="card shadow mb-3">
           <div class="card-header d-flex align-items-center gap-2">
             <img src="https://unsplash.it/48" alt="" class="img-fluid rounded-circle" width="48" height="48">
@@ -185,15 +187,15 @@
           <hr class="mx-2 my-0">
           <div class="card-footer">
             <div class="d-flex gap-2">
-              <buuton class="bnt btn-invisible w-100">
+              <button class="btn btn-invisible w-100">
                 <i class="bi bi-hand-thumbs-up me-1"></i> Curtir
-              </buuton>
-              <buuton class="bnt btn-invisible w-100">
+              </button>
+              <button class="btn btn-invisible w-100">
                 <i class="bi bi-chat-dots me-1"></i> Comentar
-              </buuton>
-              <buuton class="bnt btn-invisible w-100">
+              </button>
+              <button class="btn btn-invisible w-100">
                 <i class="bi bi-share me-1"></i> Compartilhar
-              </buuton>
+              </button>
             </div>
           </div>
 
@@ -218,26 +220,47 @@
 
         <!-- Carousel -->
         <div id="carouselAds" class="carousel slide shadow mt-3 " data-bs-ride="carousel">
-          <div class="carousel-inner rounded ">
+          <div class="carousel-inner rounded-2">
             <div class="carousel-item active">
               <!-- Imagem 1 -->
               <a href="https://dougfigueiredo.github.io/portfolio/" target="_blank" rel="noopener noreferrer"><img
-                  src="./src/img/Captura de tela portfolio.png" class="d-block w-100 " alt="..."></a>
+                  src="./src/img/Captura de tela portfolio.png" class="d-block w-100" alt="..."></a>
             </div>
             <div class="carousel-item">
               <!-- Imagem 2 -->
               <a href="https://dougfigueiredo.github.io/OnebitX" target="_blank" rel="noopener noreferrer"><img
-                  src="./src/img/Captura de tela OnebitX .png" class="d-block w-100 " alt="...">
+                  src="./src/img/Captura de tela OnebitX .png" class="d-block w-100" alt="...">
               </a>
             </div>
             <div class="carousel-item">
               <!-- Imagem 3 -->
               <a href="https://dougfigueiredo.github.io/Tela-De-Cadastro/" target="_blank"
                 rel="noopener noreferrer"><img src="./src/img/Captura de tela - tela de cadastro.png"
-                  class="d-block w-100 " alt="..."></a>
+                  class="d-block w-100" alt="..."></a>
             </div>
           </div>
+        </div>
       </aside>
+
+      <!--Modal-->
+      <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="postModalLabel">New Post</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <textarea id="writePostInput" class="form-control" rows="4" placeholder="Share something..."></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Publish Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
