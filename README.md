@@ -17,6 +17,12 @@ This project was developed to practice Bootstrap components, layout structure, a
 
 ## 📸 Preview
 <img width="1464" height="953" alt="image" src="https://github.com/user-attachments/assets/c769c1f9-0c64-479f-9cde-dff924c71657" />
+<img width="1912" height="951" alt="image" src="https://github.com/user-attachments/assets/0997e828-9863-4750-a8d6-9f79356a6be5" />
+<img width="1895" height="926" alt="image" src="https://github.com/user-attachments/assets/8c98acee-aa27-4781-a7fc-3b928e7f6da3" />
+<img width="654" height="901" alt="image" src="https://github.com/user-attachments/assets/3f1fc706-c3ab-48e7-8f45-2caa875e5b08" />
+
+
+
 
 
 ## 📚 Credits
